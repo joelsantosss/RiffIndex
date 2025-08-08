@@ -1,59 +1,58 @@
 RiffIndex
-Abstract
-RiffIndex is a web platform designed to unite rock music enthusiasts by providing a rich resource of band profiles, guitar tabs, and the latest rock news. It serves players of all skill levels and helps users discover new bands while fostering a community around their passion for rock music.
-
-Project Objective
-Develop a responsive and user-friendly website as a comprehensive rock music resource.
-
-Build and maintain a database for band profiles and rock-related trivia.
-
-Enable users to explore bands, access guitar tabs, and stay updated with rock news.
-
-Implement user registration and login for personalized experiences.
-
-Create an interactive interface encouraging community engagement.
+Overview
+RiffIndex is a responsive web platform designed for rock music enthusiasts. It provides a library of band profiles, guitar tabs for all skill levels, and the latest rock news — creating a hub to discover, learn, and connect over a shared passion for rock.
 
 Features
-Guitar Tabs & Riffs: A curated collection for all skill levels.
+Guitar Tabs & Riffs: Collection for beginners to advanced players.
 
-Search Functionality: Easily find specific songs or bands.
+Search Functionality: Quickly find bands and songs.
 
-Responsive Design: Smooth experience across all devices.
+Responsive Design: Works smoothly on desktops, tablets, and phones.
 
-Database Design
-Users Table: Stores user info (id, name, email, encrypted password, role, phone, image, requests).
+User Authentication: Registration and login for a personalized experience.
 
-Bands Table: Stores band details (id, genre, activity status, name, creation date, members, description).
+Band Requests: Users can request new band profiles.
 
-Band Requests Table: Tracks user submissions for new band profiles (id, user_id, band_name, date, members, genre, description, status, request date, reason, activity status).
-
-Relationships:
-
-One-to-many relationship between Users and Band Requests.
-
-Technologies Used
+Technologies
 Frontend: HTML5, CSS3, JavaScript, Bootstrap
 
 Backend: PHP 7.4+
 
 Database: MySQL 5.7+
 
-Local Environment: XAMPP
+Local Development: XAMPP
 
-Challenges Faced
-Ensuring consistent styling and layout across pages.
+Database Structure
+Users: Stores user data like name, email, password (encrypted), role, and profile image.
 
-Implementing responsive design for various devices required extensive testing and adjustments.
+Bands: Stores band details including name, genre, members, and status.
 
-Future Implementations
-Adding a blog system where admins can post album reviews. Users can like and comment, enhancing engagement.
+Band Requests: Tracks user submissions for new bands with status and details.
+
+Challenges
+Ensuring consistent styling across pages.
+
+Making the design fully responsive for various screen sizes.
+
+Future Enhancements
+Adding a blog feature for album reviews where users can read, comment, and like posts. Admins will manage content.
 
 Testing
-Verified user authentication (login/signup).
+User authentication tested thoroughly.
 
-Tested clickable links for proper navigation.
+All links verified for correct navigation.
 
-Ensured email features function correctly.
+Email features confirmed working.
 
-Validated CRUD operations on bands and user databases.
+CRUD operations on bands and users tested.
 
+How to Run
+Clone the repository.
+
+Set up a local server with XAMPP or similar.
+
+Import the provided MySQL database.
+
+Configure database credentials in the PHP backend.
+
+Open the project in your browser.
